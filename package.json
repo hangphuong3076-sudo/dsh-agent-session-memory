@@ -1,0 +1,48 @@
+{
+  "name": "dsh-agent-session-memory",
+  "version": "0.8.2",
+  "description": "跨 Agent 会话汇总、全文检索与方案比较",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "memory.py",
+    "cordis.patch.yml",
+    "requirements.txt",
+    "client.js",
+    "locale",
+    "origins.py",
+    "native_sources.py",
+    "extra_sources.py",
+    "archives.py",
+    "night-schedule.js",
+    "nightly.py",
+    "comparison.py",
+    "session_search.py",
+    "dictionary.sqlite",
+    "DICTIONARY-LICENSE.txt",
+    "search-worker.js",
+    "minilm.py",
+    "fetch_minilm.py",
+    "install-minilm.ps1"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  }
+}

@@ -1,0 +1,5 @@
+- insert:
+    - id: agent-session-memory
+      name: dsh-agent-session-memory
+      config:
+        python: 'python'

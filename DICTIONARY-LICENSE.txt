@@ -1,0 +1,4 @@
+dictionary.sqlite contains an adapted extract of CC-CEDICT, published by MDBG, dated 2026-11-19. Original CEDICT copyright 1997, 1998 Paul Andrew Denisowski. The community-maintained data is distributed under Creative Commons Attribution-ShareAlike 4.0 International.
+Source: https://www.mdbg.net/chinese/dictionary?page=cedict
+License: https://creativecommons.org/licenses/by-sa/4.0/
+Changes: build_dictionary.py selects short glosses, normalizes case and creates a bidirectional SQLite index. The adapted dictionary is distributed under the same license.
